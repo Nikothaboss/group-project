@@ -38,8 +38,8 @@ const Nav = () => {
             {openNav && (
             <NavExtendedContainer>
                 <NavLinkExtended to='/'>Home</NavLinkExtended>
-                <NavLink to='/admin'>Admin</NavLink>
-                <NavLink to='/login'>Login</NavLink>
+                <NavLinkExtended to='/admin'>Admin</NavLinkExtended>
+                <NavLinkExtended to='/login'>Login</NavLinkExtended>
             </NavExtendedContainer>
             )}
         </NavContainer>
