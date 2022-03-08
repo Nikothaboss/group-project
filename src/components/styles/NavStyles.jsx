@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const NavContainer = styled.nav`
     width: 100%;
     height: ${(props) => (props.extendNavbar ? "100%" : "80px")};
-    background-color: black;
+    background-color: tomato;
     display: flex;
     flex-direction: column;
     `;

@@ -32,7 +32,7 @@ const Nav = () => {
                     </NavLinkContainer>
                 </LeftContainer>
                 <RightContainer>
-                    <h2>Test</h2>
+                    <h2>Logo Here</h2>
                 </RightContainer>
             </NavInnerContainer>
             {openNav && (
