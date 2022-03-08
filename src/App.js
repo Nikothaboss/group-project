@@ -1,13 +1,23 @@
 import { useFetch } from "./hooks/fetch";
 import { useLocalStorage } from "./hooks/localStorage";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Nav from "./components/navigation/Nav";
 
 function App() {
-  const {data} = useFetch("https://sp2-database.herokuapp.com/products" )
-  const [jwt, setJwt] = useLocalStorage("jwt", [1, 2, 3, 4])
-  console.log(jwt)
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='login' element={<Login />} />
+          <Route path='admin' element={<Admin />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
