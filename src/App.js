@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { useFetch } from "./hooks/fetch";
+import { useLocalStorage } from "./hooks/localStorage";
 
 function App() {
+  const {data} = useFetch("https://sp2-database.herokuapp.com/products" )
+  const [jwt, setJwt] = useLocalStorage("jwt", [1, 2, 3, 4])
+  console.log(jwt)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
