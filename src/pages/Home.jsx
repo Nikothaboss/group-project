@@ -28,6 +28,13 @@ const Home = () => {
                   <p>{attributes.number}</p>
                   <p>{attributes.description}</p>
                   <p>{attributes.room_details.details}</p>
+                  <ul>
+                      {attributes.room_details.details.map(d => {
+                          return (
+                              <li>{d}</li>
+                          )
+                      })}
+                  </ul>
                 </div>
               )
 
