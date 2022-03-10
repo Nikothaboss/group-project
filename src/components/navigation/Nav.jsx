@@ -22,6 +22,7 @@ const Nav = () => {
                         <NavLink to='/'>Home</NavLink>
                         <NavLink to='/admin'>Admin</NavLink>
                         <NavLink to='/login'>Login</NavLink>
+                        <NavLink to='/contact'>Contact</NavLink>
                         <OpenMenuButton
                             onClick={() => {
                                 setOpenNav((curr) => !curr);
@@ -40,6 +41,7 @@ const Nav = () => {
                 <NavLinkExtended to='/'>Home</NavLinkExtended>
                 <NavLinkExtended to='/admin'>Admin</NavLinkExtended>
                 <NavLinkExtended to='/login'>Login</NavLinkExtended>
+                <NavLinkExtended to='/contact'>Contact</NavLinkExtended>
             </NavExtendedContainer>
             )}
         </NavContainer>
