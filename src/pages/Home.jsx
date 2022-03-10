@@ -25,7 +25,7 @@ const Home = () => {
                 <div key={id} className= "rooms">
                   <p>{attributes.title}</p>
                   <img src={attributes.img_url}/> 
-                  <p>{attributes.number}</p>
+                  <p>Room Number: {attributes.number}</p>
                   <p>{attributes.description}</p>
                   <p>{attributes.room_details.details}</p>
                 </div>
